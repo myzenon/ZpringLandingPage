@@ -1,0 +1,21 @@
+{
+  "name": "zpring_landing_page",
+  "description": "A landing page of zpring application",
+  "main": "index.js",
+  "authors": [
+    "Zenon 'SI"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/myzenon/ZpringLandingPage",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "materialize": "^0.97.7"
+  }
+}

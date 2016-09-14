@@ -1,0 +1,22 @@
+{
+  "name": "zpring_landing_page",
+  "version": "1.0.0",
+  "description": "A landing page of zpring application",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node_modules/.bin/bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myzenon/ZpringLandingPage.git"
+  },
+  "author": "Zenon 'SI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myzenon/ZpringLandingPage/issues"
+  },
+  "homepage": "https://github.com/myzenon/ZpringLandingPage#readme",
+  "dependencies": {
+    "bower": "^1.7.9"
+  }
+}
