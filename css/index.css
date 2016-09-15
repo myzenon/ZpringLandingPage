@@ -1,0 +1,38 @@
+/* Header */
+.header__nav__logo--logo {
+    height: 30px;
+}
+.header__nav__logo--name {
+    height: 20px;
+    margin-left: 10px;
+}
+.header__nav__menu {
+    margin-left: auto;
+}
+.header__nav__hamburger {
+    margin-left: auto;
+}
+
+/* Content : 1 */
+.content__1 {
+    background-color: #FFF;
+}
+.content__1__input--email::-webkit-input-placeholder {
+   color: #AAA;
+}
+.content__1__input--email::-moz-placeholder {
+   color: #AAA;
+}
+.content__1__input--email:-moz-placeholder {
+   color: #AAA;
+}
+.content__1__input--email:-ms-input-placeholder {
+   color: #AAA;
+}
+
+/* Content : 2 */
+.content__2 {
+    margin-top: 2rem;
+    background-color: #000;
+    height: 300px;
+}
