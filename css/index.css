@@ -1,0 +1,35 @@
+/* content */
+
+.content__section1 {
+    background-color: #FFF;
+}
+.content__box--context {
+    /*text-align: center;*/
+    margin-top: 60px;
+}
+.content__box--context--head {
+    font-size: 200%;
+    color: #616161;
+}
+.content__box--context--body {
+    font-size: 100%;
+    color: #757575;
+}
+.content__box--context--button {
+    background-color: #26a69a;
+}
+.content__box--image {
+    text-align: center;   
+}
+
+@media only screen and (max-width: 992px) {
+    .content__box--image--image {
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .content__box--image--image {
+        width: 100%;
+    }
+}
