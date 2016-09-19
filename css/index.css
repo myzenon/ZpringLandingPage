@@ -58,7 +58,7 @@
 
 /* Content : 3 */
 
-/* Desktop ^ Tablet Rule */
+/* Desktop & Tablet Rule */
 @media only screen and (min-width: 600px) {
     .content__section3__box--image--image {
         display: block;
@@ -99,6 +99,43 @@
 
 
 
+/* Content : 4 */
+/* Desktop & Tablet Rule */
 
+@media only screen and (min-width: 600px) {
+    .content__section4 {
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-image : url('https://d3ptyyxy2at9ui.cloudfront.net/dda912df6e4bbc8dfe5df34384b755d1.jpg');
+        height: 500px;
+    }
+    .content__section4__box {
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .content__section4:before {
+        content: '';
+        display: block;
+        background-size: cover;
+        background-position-x: right;
+        background-position-y: right;
+        background-repeat: no-repeat;
+        background-image : url('https://d3ptyyxy2at9ui.cloudfront.net/dda912df6e4bbc8dfe5df34384b755d1.jpg');
+        height: 300px;
+    }
+    .content__section4__box {
+        margin-top: 4vw;
+        padding-bottom: 4vw!important;
+    }
+}
 
+.content__section4 {
+    /*padding: 4vw;*/
+}
+.content__section4__box {
+    text-align: center;
+}
 
