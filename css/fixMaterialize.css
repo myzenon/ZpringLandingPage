@@ -6,3 +6,14 @@
 .container .row {
     margin: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.fix-container {
+    width: 90%!important;
+    margin: 0 auto !important;
+}

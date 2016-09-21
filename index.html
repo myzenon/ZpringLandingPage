@@ -6,47 +6,55 @@
     <title>Zpring</title>
     <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css">
     <link rel="stylesheet" href="bower_components/material-design-icons/iconfont/material-icons.css">
+    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="css/fixMaterialize.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
+
     <header>
+        
         <div class="navbar-fixed">
-            <nav class="header__nav teal darken-1">
-                <div class="container nav-wrapper valign-wrapper">
-                    <div class="valign-wrapper">
-                        <img class="header__nav__logo--logo" src="images/zpring_logo.svg" alt="">
-                        <img class="header__nav__logo--name" src="images/zpring_logo_name.svg" alt="">
-                    </div>
-                    <div class="header__nav__menu hide-on-med-and-down">
-                        <ul>
-                            <li><a href="#introduction">ขายหน้าร้าน</a></li>
-                            <li><a href="#">ออกเอกสาร</a></li>
-                            <li><a href="#">คลังสินค้า</a></li>
-                            <li><a href="#">หนี้การค้า</a></li>
-                            <li><a href="#">รายงาน</a></li>
-                            <li><a class="waves-effect btn white black-text">สมัครสมาชิก</a></li>
-                        </ul>
-                    </div>
-                    <div class="header__nav__hamburger hide-on-large-only">
-                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                    </div>
-                    <div class="side-nav" id="mobile-demo">
-                        <ul>
-                            <li><a href="#introduction">ขายหน้าร้าน</a></li>
-                            <li><a href="#">ออกเอกสาร</a></li>
-                            <li><a href="#">คลังสินค้า</a></li>
-                            <li><a href="#">หนี้การค้า</a></li>
-                            <li><a href="#">รายงาน</a></li>
-                            <li><div class="divider"></div></li>
-                            <li><a href="#">สมัครสมาชิก</a></li>
-                        </ul>
+            <nav class="header__nav white">
+                <div class="nav-wrapper">
+                    <div class="fix-container valign-wrapper">
+                        <div class="valign-wrapper">
+                            <img class="header__nav__logo--logo" src="images/zpring_logo.svg" alt="">
+                            <img class="header__nav__logo--name" src="images/zpring_logo_name.svg" alt="">
+                        </div>
+                        <div class="header__nav__menu hide-on-med-and-down">
+                            <ul>
+                                <li><a href="#content2">ขายหน้าร้าน</a></li>
+                                <li><a href="#">ออกเอกสาร</a></li>
+                                <li><a href="#">คลังสินค้า</a></li>
+                                <li><a href="#">หนี้การค้า</a></li>
+                                <li><a href="#">รายงาน</a></li>
+                                <li id="header__nav__menu--register" style="display: none;">
+                                    <a class="waves-effect btn teal darken-1 white-text" href="#introduction">สมัครสมาชิก</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__nav__hamburger hide-on-large-only">
+                            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                        </div>
+                        <div class="side-nav" id="mobile-demo">
+                            <ul>
+                                <li><a href="#introduction">ขายหน้าร้าน</a></li>
+                                <li><a href="#">ออกเอกสาร</a></li>
+                                <li><a href="#">คลังสินค้า</a></li>
+                                <li><a href="#">หนี้การค้า</a></li>
+                                <li><a href="#">รายงาน</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
         </div>
+
+
     </header>
 
     <div class="content__section1">
@@ -56,46 +64,45 @@
                     <span class="__text--head">An ecommerce platform made for you</span>
                     <br><br>
                     <span class="__text--context">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ad repellendus aliquam praesentium sequi sint adipisci recusandae quis dolorum, optio repudiandae in tempora voluptas nostrum porro laudantium culpa atque, eos!</span>
-                    <input type="email" placeholder="กรอกอีเมล์เพื่อเริ่มต้นใช้งาน" class="validate center-align content__section1__input--email">
+                    <br><br>
+                    <input id="content__section1__email--input" type="email" placeholder="กรอกอีเมล์เพื่อเริ่มต้นใช้งาน" class="validate center-align content__section1__input--email">
                     <br>
-                    <button class="btn waves-effect waves-light teal darken-2" type="submit" name="action">
-                        เริ่มต้นใช้งาน
-                        <i class="material-icons right content__section1__input--button">tag_faces</i>
-                    </button>
-               </div>
-           </div>
-        </div>
-    </div>
-
-    <div class="content__section2">
-        <div id="sth" class="container section scrollspy">
-           <div class="row">
-               <div class="col s12 content__section2__box--image">
-                   <img class="content__section2__box--image--mobile" src="images/mobile.png" alt="">
-                   <div class="content__section2__box--image--app">
-                       <img src="images/app.png" alt="">
-                   </div>
-               </div>
-               <div class="col s12 content__section2__box--context">
-                   <div>
-                        <span class="__text--head">
-                            Lorem ipsum dolor sit amet
-                        </span>
-                        <br><br>
-                        <span class="__text--context">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam totam vero, sint quisquam. Consequuntur aperiam vero iusto cupiditate rerum debitis iste quam. Sed id voluptas eveniet excepturi aperiam esse, temporibus.
-                        </span>
+                    <div class="content__section1__button">
+                        <button id="content__section1__button__facebook" class="btn waves-effect waves-light blue darken-4">
+                            <i class="ion-social-facebook left content__section1__input--button"></i>
+                            Facebook
+                        </button>
+                        <button id="content__section1__button__google" class="btn waves-effect red darken-1">
+                            <i class="ion-social-google left content__section1__input--button"></i>
+                            Google
+                        </button>
+                        <button id="content__section1__button__email" class="btn waves-effect waves-light teal darken-2">
+                            <i class="material-icons left content__section1__input--button">email</i>
+                            E-Mail
+                        </button>
+                        <button id="content__section1__button__send" class="btn waves-effect waves-light teal darken-2" style="display: none;" type="submit">Send
+                            <i class="material-icons right">send</i>
+                        </button>
+                        <button id="content__section1__button__cancel" class="btn waves-effect white black-text" style="display: none;" type="submit">Cancel
+                            <i class="material-icons right">close</i>
+                        </button>
                     </div>
                </div>
            </div>
         </div>
     </div>
 
-    <div class="content__section4">
-        <div id="sth" class="container scrollspy">
+    <div class="content__section2">
+        <div id="content2" class="container section scrollspy">
            <div class="row">
-               <div class="col s12 m5 l5 content__section4__box valign-wrapper">
-                    <div>
+               <div class="col s12 container content__section2__box--image">
+                   <img class="content__section2__box--image--mobile" src="images/mobile.png" alt="">
+                   <div class="content__section2__box--image--app">
+                       <img src="images/app.png" alt="">
+                   </div>
+               </div>
+               <div class="col s12 container content__section2__box--context">
+                   <div>
                         <span class="__text--head">
                             Lorem ipsum dolor sit amet
                         </span>
@@ -131,9 +138,27 @@
         </div>
     </div>
 
+    <div class="content__section4">
+        <div id="sth" class="container scrollspy">
+           <div class="row">
+               <div class="col s12 m5 l5 content__section4__box valign-wrapper">
+                    <div>
+                        <span class="__text--head">
+                            Lorem ipsum dolor sit amet
+                        </span>
+                        <br><br>
+                        <span class="__text--context">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam totam vero, sint quisquam. Consequuntur aperiam vero iusto cupiditate rerum debitis iste quam. Sed id voluptas eveniet excepturi aperiam esse, temporibus.
+                        </span>
+                    </div>
+               </div>
+           </div>
+        </div>
+    </div>
+
 
     <footer class="page-footer black" style=" margin-top : 0">
-          <div class="container">
+          <div class="fix-container">
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">Footer Content</h5>
@@ -151,30 +176,12 @@
             </div>
           </div>
           <div class="footer-copyright">
-            <div class="container">
+            <div class="fix-container">
             © 2014 Copyright Text
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
         </footer>
-            
-
-
-    <!--ห้ามแก้ไข-->
-    <script>
-        $(document).ready(function(){
-
-            $('.button-collapse').sideNav({
-                menuWidth: 300, // Default is 240
-                edge: 'right', // Choose the horizontal origin
-                closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-                }
-            );
-
-            $('.scrollspy').scrollSpy();
-
-        });
-    </script>
-
+        
 </body>
 </html>
